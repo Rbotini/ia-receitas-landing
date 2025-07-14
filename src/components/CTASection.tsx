@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChefHat } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -41,9 +42,10 @@ const CTASection = () => {
             <Button 
               variant="outline" 
               size="lg"
+              asChild
               className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-semibold px-8 py-4 text-lg rounded-2xl transition-all duration-300 hover:scale-105"
             >
-              Fazer Login
+              <Link to="/profile">Fazer Login</Link>
             </Button>
           </div>
 

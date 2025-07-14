@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ChefHat, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -47,9 +48,10 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
+              asChild
               className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-semibold px-8 py-4 text-lg rounded-2xl transition-all duration-300 hover:scale-105"
             >
-              Entrar
+              <Link to="/profile">Entrar</Link>
             </Button>
           </div>
 
